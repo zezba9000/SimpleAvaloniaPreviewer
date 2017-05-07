@@ -1,0 +1,6 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui" Design.Width="1024" Design.Height="800">
+
+	<Grid Background="LightGray">
+		<TextBox Width="256" Height="32">Hello World!</TextBox>
+	</Grid>
+</UserControl>

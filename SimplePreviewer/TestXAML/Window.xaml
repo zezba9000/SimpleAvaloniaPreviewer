@@ -1,0 +1,6 @@
+﻿<Window xmlns="https://github.com/avaloniaui" Design.Width="1024" Design.Height="800" Title="Yahoo It Works">
+
+	<Grid Background="LightGray">
+		<TextBlock>Nice!</TextBlock>
+	</Grid>
+</Window>
