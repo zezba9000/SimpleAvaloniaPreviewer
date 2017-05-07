@@ -35,10 +35,6 @@ namespace AvaloniaPV
 	{
 		public override void Initialize()
 		{
-			#if !NETCOREAPP1_1
-			AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
-			#endif
-
 			string xaml = @"
 <Application xmlns='https://github.com/avaloniaui'>
   <Application.Styles>
@@ -52,22 +48,6 @@ namespace AvaloniaPV
 			loader.Load(xaml, this);
 			base.Initialize();
 		}
-
-		#if !NETCOREAPP1_1
-		private void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
-		{
-			var ex = e.ExceptionObject as Exception;
-			string msg = "Unknown";
-			if (ex != null)
-			{
-				Core.Debug.LogError("Critical Error: " + Environment.NewLine + ex.StackTrace);
-				Core.Debug.Dispose();
-				msg = ex.Message;
-			}
-
-			MessageBox.Show("Critical Error: " + msg);
-		}
-		#endif
 	}
 
 	public class XamlWindow : Window
