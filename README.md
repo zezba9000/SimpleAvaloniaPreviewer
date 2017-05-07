@@ -1,7 +1,7 @@
 # How to use
 Simply copy the "SimplePreviewer.cs" file into your proj.
 
-Then append your void main like so:
+Then prefix your void main like so:
 ```
 static void Main()
 {
