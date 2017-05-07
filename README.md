@@ -11,3 +11,5 @@ static void Main()
     // do normal stuff (when previewer not active)...
 }
 ```
+
+Test sln is for VS 2017 .NET Core (SimplePreviewer.cs should work with any .net version)
