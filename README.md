@@ -12,4 +12,6 @@ static void Main()
 }
 ```
 
+Now invoke your app with the args: "yourapp -usepv".
+
 Test sln is for VS 2017 .NET Core (SimplePreviewer.cs should work with any .net version)
