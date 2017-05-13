@@ -166,6 +166,7 @@ namespace AvaloniaPV
 </Window>
 ";
 
+				BeginInit();
 				var loader = new AvaloniaXamlLoader();
 				loader.Load(xaml, this);
 				this.Find<TextBox>("errorBox").Text = "ERROR: " + e.Message;
