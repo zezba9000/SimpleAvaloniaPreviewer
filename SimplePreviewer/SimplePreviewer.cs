@@ -138,20 +138,6 @@ namespace AvaloniaPV
 			}
 		}
 
-		public void Update(string xaml)
-		{
-			try
-			{
-				BeginInit();
-				var loader = new AvaloniaXamlLoader();
-				loader.Load(xaml, this);
-			}
-			catch (Exception e)
-			{
-				HandleError(e);
-			}
-		}
-
 		private void HandleError(Exception e)
 		{
 			var xaml = @"
